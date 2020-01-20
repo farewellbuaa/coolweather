@@ -31,7 +31,7 @@ public class Utility {
     }
 
     public static boolean handleCityResponse(String response, int provinceId){
-        if (TextUtils.isEmpty(response)){
+        if (!TextUtils.isEmpty(response)){
             try {
                 JSONArray allCities = new JSONArray(response);
                 for (int i=0;i<allCities.length();i++){
